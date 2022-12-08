@@ -1,0 +1,431 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+
+body {
+  background-color: black;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  color: snow;
+  font-size: 20px;
+  background-color: black;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+  font-family: "Chakra Petch", sans-serif;
+
+  &__logo {
+    width: 300px;
+  }
+
+  &__menu {
+    width: 100%;
+    color: snow;
+    font-size: 20px;
+    background-color: black;
+    margin: 0 auto;
+    padding: 0px;
+    font-family: "Chakra Petch", sans-serif;
+
+  }
+
+  &__content {
+    width: 1200px;
+    margin: 0 auto;
+
+  }
+}
+
+
+.logo {
+  float: left;
+  margin-top: 50px;
+
+  & span {
+    float: left;
+    font-size: 60px;
+    margin-top: 10px;
+  }
+
+  &__text {
+    float: left;
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+}
+
+.logo:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
+
+.btn {
+
+  background-color: black;
+  color: snow;
+  border: 2px solid snow;
+  font-size: 22px;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.btn:hover {
+
+  cursor: pointer;
+  opacity: 75%;
+
+}
+
+.login {
+  float: right;
+  margin-top: 4%;
+  margin-right: -50px;
+
+  &__btn {
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;
+    margin: 0 10px;
+  }
+
+
+}
+
+.menu {
+
+  &__list {
+    border-top: 2px solid snow;
+    border-bottom: 2px solid snow;
+    list-style: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+
+  &__item {
+    padding: 30px;
+    margin: 0;
+    display: inline-block;
+
+
+  }
+
+  &__item:hover {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    opacity: 75%;
+
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: white;
+
+  }
+
+}
+
+.content {
+
+  &__start1 {
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    & img {
+      float: right;
+      margin-right: 100px;
+
+    }
+
+    & h2 {
+      float: left;
+      margin-left: 100px;
+    }
+
+    & p {
+      float: left;
+      margin-left: 100px;
+      margin-bottom: 30px;
+    }
+
+    & button {
+      margin-left: 100px;
+      border-radius: 25px;
+      width: 400px;
+      height: 50px;
+      float: left;
+    }
+  }
+
+  &__start2 {
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+    & img {
+      float: left;
+      margin-left: 100px;
+    }
+
+    & p {
+      float: left;
+      margin-left: 100px;
+
+    }
+
+    & h2 {
+      float: left;
+      margin-left: 100px;
+      margin-top: 60px;
+    }
+  }
+
+  &__goals {
+    height: auto;
+    width: 1200px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    & h2 {
+      text-align: center;
+    }
+
+    & p {
+      margin-bottom: 20px;
+    }
+
+    .content_div {
+      display: inline-block;
+
+      & div {
+        text-align: center;
+        float: left;
+        margin: 20px;
+        display: inline-block;
+
+      }
+
+      & span {
+        font-size: 100px;
+
+      }
+
+      & p {
+        text-align: center;
+      }
+    }
+  }
+
+  &__slider {
+    margin-bottom: 70px;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+
+    & h2 {
+      text-align: center;
+      font-size: 45px;
+    }
+
+    & p {
+      text-align: center;
+
+    }
+
+    .slide {
+      position: absolute;
+      top: 170px;
+      left: 26.67%;
+      float: left;
+      transition: all 0.3s ease, background-position;
+
+      &__img {
+        width: 560px;
+        height: 344px;
+
+
+      }
+
+      &__counter {
+        width: 60px;
+        height: 50px;
+        position: absolute;
+        top: 525px;
+        left: 575px;
+        text-align: center;
+        font-size: 35px;
+      }
+    }
+
+
+    .slider__button {
+      width: 60px;
+      height: 60px;
+      border: 2px solid snow;
+      background-color: black;
+      border-radius: 70px;
+
+
+      &--prev {
+        float: left;
+        position: relative;
+        top: 200px;
+        left: 250px;
+      }
+
+      &--next {
+        position: relative;
+        top: 200px;
+        right: 250px;
+        float: right;
+      }
+
+      & span {
+        font-size: 30px;
+        font-weight: 400;
+        color: snow;
+        text-align: center;
+        position: relative;
+        bottom: 2px;
+
+      }
+    }
+
+    .slider__button:hover {
+      opacity: 70%;
+      cursor: pointer;
+    }
+
+    .slider__button:disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+    .slider__btn{
+      width: 450px;
+      height: 50px;
+      border-radius: 30px;
+      position: absolute;
+      top:600px;
+      left:50%;
+      transform: translate(-50%);
+    }
+
+  }
+
+  &__recipes {
+
+    text-align: center;
+    width: 1200px;
+    height: auto;
+    margin-bottom: 50px;
+
+
+    & h2 {
+      font-size: 45px;
+    }
+
+    .recipe_box {
+
+      width: 300px;
+      height: 300px;
+      float: left;
+      margin: 20px;
+
+      & img {
+        width: 300px;
+      }
+
+      & p {
+        text-align: left;
+        margin-left: 20px;
+
+      }
+
+      & span {
+        font-weight: bold;
+      }
+    }
+
+    .content__wrapper {
+      display: inline-block;
+    }
+
+    .recipe_box:hover {
+      cursor: pointer;
+      opacity: 80%;
+
+      border-bottom: 2px solid snow;
+    }
+  }
+}
+
+
+.footer {
+  height: 70px;
+  border-top: 2px solid snow;
+  color: white;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+}
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

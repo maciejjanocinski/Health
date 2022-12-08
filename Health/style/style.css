@@ -1,0 +1,325 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  color: snow;
+  font-size: 20px;
+  background-color: black;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+  font-family: "Chakra Petch", sans-serif;
+}
+.wrapper__logo {
+  width: 300px;
+}
+.wrapper__menu {
+  width: 100%;
+  color: snow;
+  font-size: 20px;
+  background-color: black;
+  margin: 0 auto;
+  padding: 0px;
+  font-family: "Chakra Petch", sans-serif;
+}
+.wrapper__content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  margin-top: 50px;
+}
+.logo span {
+  float: left;
+  font-size: 60px;
+  margin-top: 10px;
+}
+.logo__text {
+  float: left;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.logo:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
+
+.btn {
+  background-color: black;
+  color: snow;
+  border: 2px solid snow;
+  font-size: 22px;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
+
+.login {
+  float: right;
+  margin-top: 4%;
+  margin-right: -50px;
+}
+.login__btn {
+  width: 200px;
+  height: 45px;
+  border-radius: 25px;
+  margin: 0 10px;
+}
+
+.menu__list {
+  border-top: 2px solid snow;
+  border-bottom: 2px solid snow;
+  list-style: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu__item {
+  padding: 30px;
+  margin: 0;
+  display: inline-block;
+}
+.menu__item:hover {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+  opacity: 75%;
+}
+.menu__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.content__start1 {
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.content__start1 img {
+  float: right;
+  margin-right: 100px;
+}
+.content__start1 h2 {
+  float: left;
+  margin-left: 100px;
+}
+.content__start1 p {
+  float: left;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+.content__start1 button {
+  margin-left: 100px;
+  border-radius: 25px;
+  width: 400px;
+  height: 50px;
+  float: left;
+}
+.content__start2 {
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.content__start2 img {
+  float: left;
+  margin-left: 100px;
+}
+.content__start2 p {
+  float: left;
+  margin-left: 100px;
+}
+.content__start2 h2 {
+  float: left;
+  margin-left: 100px;
+  margin-top: 60px;
+}
+.content__goals {
+  height: auto;
+  width: 1200px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.content__goals h2 {
+  text-align: center;
+}
+.content__goals p {
+  margin-bottom: 20px;
+}
+.content__goals .content_div {
+  display: inline-block;
+}
+.content__goals .content_div div {
+  text-align: center;
+  float: left;
+  margin: 20px;
+  display: inline-block;
+}
+.content__goals .content_div span {
+  font-size: 100px;
+}
+.content__goals .content_div p {
+  text-align: center;
+}
+.content__slider {
+  margin-bottom: 70px;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+.content__slider h2 {
+  text-align: center;
+  font-size: 45px;
+}
+.content__slider p {
+  text-align: center;
+}
+.content__slider .slide {
+  position: absolute;
+  top: 170px;
+  left: 26.67%;
+  float: left;
+  transition: all 0.3s ease, background-position;
+}
+.content__slider .slide__img {
+  width: 560px;
+  height: 344px;
+}
+.content__slider .slide__counter {
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 525px;
+  left: 575px;
+  text-align: center;
+  font-size: 35px;
+}
+.content__slider .slider__button {
+  width: 60px;
+  height: 60px;
+  border: 2px solid snow;
+  background-color: black;
+  border-radius: 70px;
+}
+.content__slider .slider__button--prev {
+  float: left;
+  position: relative;
+  top: 200px;
+  left: 250px;
+}
+.content__slider .slider__button--next {
+  position: relative;
+  top: 200px;
+  right: 250px;
+  float: right;
+}
+.content__slider .slider__button span {
+  font-size: 30px;
+  font-weight: 400;
+  color: snow;
+  text-align: center;
+  position: relative;
+  bottom: 2px;
+}
+.content__slider .slider__button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+.content__slider .slider__button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.content__slider .slider__btn {
+  width: 450px;
+  height: 50px;
+  border-radius: 30px;
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.content__recipes {
+  text-align: center;
+  width: 1200px;
+  height: auto;
+  margin-bottom: 50px;
+}
+.content__recipes h2 {
+  font-size: 45px;
+}
+.content__recipes .recipe_box {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 20px;
+}
+.content__recipes .recipe_box img {
+  width: 300px;
+}
+.content__recipes .recipe_box p {
+  text-align: left;
+  margin-left: 20px;
+}
+.content__recipes .recipe_box span {
+  font-weight: bold;
+}
+.content__recipes .content__wrapper {
+  display: inline-block;
+}
+.content__recipes .recipe_box:hover {
+  cursor: pointer;
+  opacity: 80%;
+  border-bottom: 2px solid snow;
+}
+
+.footer {
+  height: 70px;
+  border-top: 2px solid snow;
+  color: white;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+/*# sourceMappingURL=style.css.map */
